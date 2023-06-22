@@ -1,1 +1,1 @@
-# bin-to-dec
+# A binary to decimal converter
