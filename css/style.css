@@ -28,6 +28,10 @@ header {
   background-color: rgb(2, 146, 98);
 }
 
+header p {
+  margin: 0.25rem 0;
+}
+
 main {
   padding: 2rem 0;
 }

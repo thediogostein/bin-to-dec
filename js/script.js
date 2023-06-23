@@ -22,20 +22,30 @@ const convert = (e) => {
 
   const binary = form.querySelector('#binary').value;
   let resultEl = form.querySelector('#result-el');
+  let result = 0;
+  powValue = binary.length - 1;
 
   // Clear result before showing next result
   // resultEl.textContent = '';
 
   for (let i = 0; i < binary.length; i++) {
     if (binary[i] === '0' || binary[i] === '1') {
-      resultEl.value = binary;
       //
 
-      //
+      // console.log(`Binary[i]: ${binary[i]}`);
+
+      // console.log(`powValue: ${powValue}`);
+
+      result += binary[i] * 2 ** powValue;
+      // console.log(`Result: ${result}`);
+
+      powValue--;
     } else {
       showError();
     }
   }
+
+  resultEl.value = result;
 };
 
 form.addEventListener('submit', convert);
