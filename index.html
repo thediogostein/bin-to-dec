@@ -21,8 +21,9 @@
             <input type="number" id="result-el" readonly value="" />
           </div>
           <div class="row">
-            <label for="binary">Binary</label>
+            <label for="binary">Binary (0 or 1) up to 8 digits</label>
             <input type="tel" id="binary" maxlength="8" required />
+            <div class="error" id="error-el"></div>
           </div>
           <button type="submit">Convert</button>
           <button type="reset">Reset</button>
@@ -31,3 +32,5 @@
     </main>
   </body>
 </html>
+
+<!-- pattern="[0*1*]*[1*0*]*" -->

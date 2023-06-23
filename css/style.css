@@ -69,6 +69,17 @@ button[type='submit']:focus {
   background-color: rgb(2, 155, 155);
 }
 
+button:disabled {
+  cursor: default;
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+}
+
+button:disabled:hover {
+  background-color: dimgrey;
+}
+
 button[type='reset'] {
   background-color: brown;
 }
@@ -80,4 +91,9 @@ button[type='reset']:focus {
 
 .row {
   margin-bottom: 1rem;
+}
+
+.error {
+  color: rgb(236, 51, 51);
+  font-size: 1rem;
 }
